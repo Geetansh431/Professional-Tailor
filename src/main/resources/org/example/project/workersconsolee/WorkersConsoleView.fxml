@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.project.workersconsole.WorkersConsoleController">
+   <children>
+      <Label layoutX="231.0" layoutY="41.0" text="Workers Console">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="140.0" layoutY="89.0" text="Worker Name" />
+      <TextField fx:id="WorkerName" layoutX="139.0" layoutY="107.0" prefHeight="26.0" prefWidth="333.0" />
+      <TextField fx:id="Address" layoutX="140.0" layoutY="167.0" />
+      <TextField fx:id="MobileNumber" layoutX="323.0" layoutY="167.0" />
+      <Label layoutX="140.0" layoutY="150.0" text="Address" />
+      <Label layoutX="323.0" layoutY="150.0" text="Mobile Number" />
+      <Label layoutX="140.0" layoutY="229.0" text="Specialization" />
+      <ListView fx:id="Specialization" layoutX="139.0" layoutY="247.0" onMouseClicked="#ClickedSpecialization" prefHeight="110.0" prefWidth="138.0" />
+      <Button layoutX="303.0" layoutY="323.0" mnemonicParsing="false" onAction="#DoSave" text="Save" />
+      <Button layoutX="378.0" layoutY="323.0" mnemonicParsing="false" onAction="#NewConsole" text="New" />
+      <TextArea fx:id="FillSpecialization" layoutX="290.0" layoutY="247.0" prefHeight="39.0" prefWidth="186.0" />
+      <Button layoutX="440.0" layoutY="323.0" mnemonicParsing="false" onAction="#DoDelete" text="Delete" />
+
+   </children>
+</AnchorPane>

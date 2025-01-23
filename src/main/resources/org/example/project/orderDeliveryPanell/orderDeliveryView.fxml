@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.project.orderDeliveryPanel.orderDeliveryPanelController">
+   <children>
+      <TextField fx:id="MobileNumberFeild" layoutX="106.0" layoutY="87.0" />
+      <Label layoutX="106.0" layoutY="70.0" text="Mobile Number" />
+      <Button layoutX="274.0" layoutY="87.0" mnemonicParsing="false" onAction="#FindOrderOnAction" text="Find Orders" />
+      <TableView fx:id="TableID" layoutX="106.0" layoutY="139.0" prefHeight="200.0" prefWidth="346.0">
+        <columns>
+          <TableColumn fx:id="StatusColumn" prefWidth="62.39996337890625" text="Status" />
+          <TableColumn fx:id="OrderIDColumn" prefWidth="88.00006103515625" text="Order ID" />
+            <TableColumn fx:id="BillColumn" prefWidth="75.0" text="Bill" />
+            <TableColumn fx:id="AddressColumn" prefWidth="119.19998779296873" text="Dress" />
+        </columns>
+      </TableView>
+      <Label layoutX="106.0" layoutY="349.0" text="Total BIll" />
+      <TextField fx:id="TotalBill" layoutX="163.0" layoutY="345.0" />
+      <Button layoutX="368.0" layoutY="345.0" mnemonicParsing="false" onAction="#DeliveredAllOnAction" text="Delivered All" />
+   </children>
+</AnchorPane>

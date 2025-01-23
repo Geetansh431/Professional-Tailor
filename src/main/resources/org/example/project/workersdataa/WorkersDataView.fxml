@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.project.workersdata.WorkersDataController">
+    <children>
+        <ComboBox fx:id="SpecializationCombo" layoutX="64.0" layoutY="100.0" onAction="#SlowSpec" prefWidth="150.0" promptText="Specialization" />
+        <TableView fx:id="workersTable" layoutX="64.0" layoutY="152.0" prefHeight="200.0" prefWidth="464.0">
+            <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="100.0" text="Name" />
+                <TableColumn fx:id="addressColumn" prefWidth="150.0" text="Address" />
+                <TableColumn fx:id="numberColumn" prefWidth="100.0" text="Number" />
+                <TableColumn fx:id="specializationColumn" prefWidth="150.0" text="Specialization" />
+            </columns>
+        </TableView>
+        <Button layoutX="414.0" layoutY="99.0" mnemonicParsing="false" onAction="#ShowWorkersData" prefHeight="26.0" prefWidth="113.0" text="All Workers" />
+    </children>
+</AnchorPane>

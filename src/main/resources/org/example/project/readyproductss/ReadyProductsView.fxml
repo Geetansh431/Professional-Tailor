@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.project.readyproducts.ReadyProductsController">
+   <children>
+      <Label layoutX="232.0" layoutY="41.0" text="Get Ready Products">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="80.0" text="Workers Name" />
+      <ComboBox fx:id="SelectWorker" layoutX="122.0" layoutY="98.0" prefWidth="150.0" promptText="Select Worker" />
+      <ListView fx:id="OrderID" layoutX="122.0" layoutY="142.0" prefHeight="126.0" prefWidth="112.0" />
+      <ListView fx:id="DressID" layoutX="240.0" layoutY="142.0" prefHeight="126.0" prefWidth="120.0" />
+      <ListView fx:id="DateOfDelivery" layoutX="367.0" layoutY="142.0" prefHeight="126.0" prefWidth="120.0" />
+      <Button fx:id="Recieved" layoutX="249.0" layoutY="336.0" mnemonicParsing="false" text="Recieved Button" />
+      <Label layoutX="155.0" layoutY="268.0" text="Order ID" />
+      <Label layoutX="286.0" layoutY="268.0" text="Dress" />
+      <Label layoutX="385.0" layoutY="268.0" text="Date of Delivery" />
+   </children>
+</AnchorPane>

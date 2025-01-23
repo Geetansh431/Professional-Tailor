@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="718.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.project.measurementExplorer.MeasurementExplorerController">
+    <children>
+        <ComboBox fx:id="OrderStatusID" layoutX="22.0" layoutY="65.0" onAction="#OrderStatusOnAction" prefWidth="150.0" promptText="Order Status" />
+        <ComboBox fx:id="WorkersID" layoutX="235.0" layoutY="65.0" onAction="#WorkersOnAction" prefWidth="150.0" promptText="Workers" />
+        <TextField layoutX="402.0" layoutY="65.0" onAction="#MobileNumberAction" text="Mobile Number" />
+        <Button layoutX="647.0" layoutY="65.0" mnemonicParsing="false" onAction="#FetchOnAction" text="Fetch" />
+        <TableView fx:id="ordersTable" layoutX="22.0" layoutY="126.0" prefHeight="200.0" prefWidth="670.0">
+            <columns>
+                <TableColumn fx:id="OrderColumn" text="Order ID" />
+                <TableColumn fx:id="MobileColumn" text="Mobile Number" />
+                <TableColumn fx:id="DressColumn" text="Dress" />
+                <TableColumn fx:id="PicColumn" text="Pic" />
+                <TableColumn fx:id="DOBColumn" text="Delivery Date" />
+                <TableColumn fx:id="QuantityColumn" text="Quantity" />
+                <TableColumn fx:id="BillColumn" text="Bill" />
+                <TableColumn fx:id="WorkersColumn" prefWidth="109.60001220703123" text="Worker" />
+            </columns>
+        </TableView>
+        <Button layoutX="22.0" layoutY="343.0" mnemonicParsing="false" text="Show All" />
+        <Button layoutX="124.0" layoutY="343.0" mnemonicParsing="false" onAction="#ExportOnAction" text="Export To Excel" />
+    </children>
+</AnchorPane>
